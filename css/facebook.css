@@ -1,3 +1,146 @@
+
+/* These are applicable to Search options
+ */
+div[id="browse_result_area"] a[href*="profile"] img, 
+/* Profile picture blur */
+div[id="browse_result_area"] a._2yet img
+/* Page profile picture blur */
+{
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5);
+  -ms-filter: blur(5px);
+}
+
+div[id="browse_result_area"] a[href*="profile"]:hover img,
+div[id="browse_result_area"] a._2yet:hover img {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0);
+  -ms-filter: blur(0px);
+}
+
+/* These are written to blur Notes image
+*/
+div[id*="feed_stream"] a[href*="/notes/"] div {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5);
+  -ms-filter: blur(5px);
+}
+
+div[id*="feed_stream"] div.mtm:hover a[href*="/notes/"] div {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0);
+  -ms-filter: blur(0px);
+}
+
+/* Basically these are written to blur events image
+ */
+div[id*="feed_stream"] div.mtm div[class*="fbStoryAttachmentImage"] img {
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10);
+  -ms-filter: blur(10px);
+}
+
+div[id*="feed_stream"] div.mtm:hover div[class*="fbStoryAttachmentImage"] img {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0);
+  -ms-filter: blur(0px);
+}
+
+/* Complex scenario: Handle this Slider for Suggested Page!!! 
+*/
+div[id*="feed_stream"] div[class="_6l-"] img {
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10);
+  -ms-filter: blur(10px);
+}
+
+/* This code seems to be working for some cases only. Be fixed later. 
+*/
+div[id*="feed_stream"] ._dcs:hover img, div[class="_6l-"]:hover img {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0);
+  -ms-filter: blur(0px);
+}
+
+/* Clear All Blur from Notifications List
+*/
+div[id="fbNotificationsJewel"] img, li[data-gt*="notif"] img {
+  filter: blur(0px) !important;
+  -webkit-filter: blur(0px) !important;
+  -moz-filter: blur(0px) !important;
+  -o-filter: blur(0px) !important;
+  -ms-filter: blur(0) !important;
+  -ms-filter: blur(0px) !important;
+}
+
+/* Blur Page Suggesttions, People Suggestions (.ego_section)
+and Group Suggestions */
+.ego_section img, a[href*="/groups/"] img {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5);
+    -ms-filter: blur(5px);
+}
+
+.ego_section img:hover, a[href*="/groups/"]:hover img {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0);
+    -ms-filter: blur(0px);
+}
+
+a[href*="/videos/"] img {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5);
+    -ms-filter: blur(5px);
+}
+
+a[href*="/videos/"]:hover img {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0);
+    -ms-filter: blur(0px);
+}
+
+
+
+/*
+	Legacy Code
+*/
+
 div[id*="feed_stream"] a[target="_blank"] img,
 div[id*="feed_stream"] a[href*="photo"] img,
 div[id*="feed_stream"] a[href*="post"] img,
