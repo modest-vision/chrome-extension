@@ -2,8 +2,8 @@
   "manifest_version": 2,
 
   "name": "Modest Vision",
-  "description": "This extension tries to hide and blur inappropriate graphics on some popular websites eg. Facebook, Youtube, Twitter etc.",
-  "version": "1.0",
+  "description": "This extension blurs inappropriate graphics on some popular websites e.g. Facebook, Youtube, Twitter etc.",
+  "version": "1.1",
 
   "browser_action": {
     "default_icon": "icon.png",
